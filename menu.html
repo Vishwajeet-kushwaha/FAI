@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidus Achates | Coffee Menu</title>
+    <meta name="description" content="Explore our premium selection of specialty green coffee beans from around the world.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f4d4f77253.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --coffee-brown: #6F4E37;
+            --light-cream: #F5F0E6;
+            --dark-brown: #3A2C1A;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--dark-brown);
+            background-color: var(--light-cream);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-brown) !important;
+        }
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: #5a3d2a;
+        }
+        .menu-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        .coffee-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .coffee-item:hover {
+            transform: translateY(-10px);
+        }
+        .coffee-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .coffee-body {
+            padding: 20px;
+        }
+        .origin-flag {
+            width: 30px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-right: 8px;
+        }
+        .coffee-title {
+            font-weight: 700;
+            color: var(--coffee-brown);
+            margin-bottom: 10px;
+        }
+        .flavor-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        .flavor-tag {
+            background-color: var(--light-cream);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .price {
+            font-weight: 700;
+            color: var(--coffee-brown);
+            font-size: 1.2rem;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--coffee-brown);
+        }
+        .menu-category {
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">FIDUS ACHATES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#africa">Africa</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#latin-america">Latin America</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#asia">Asia</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#blends">Blends</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-flex">
+                    <a href="#contact" class="btn btn-coffee">Request Samples</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeIn">Our Coffee Menu</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Specialty-grade green coffee beans from premier growing regions</p>
+        </div>
+    </header>
+
+    <!-- Menu Content -->
+    <div class="container">
+        <!-- African Coffees -->
+        <section id="africa" class="menu-category">
+            <h2 class="section-title">African Origins</h2>
+            <div class="row">
+                <!-- Ethiopian Yirgacheffe -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1593443320730-2d1c01442f33?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Ethiopian Yirgacheffe">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/et.png" class="origin-flag" alt="Ethiopia flag">
+                                <span class="text-muted">Ethiopia</span>
+                            </div>
+                            <h3 class="coffee-title">Yirgacheffe G1</h3>
+                            <p class="text-muted">Washed Process • 86 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Floral</span>
+                                <span class="flavor-tag">Citrus</span>
+                                <span class="flavor-tag">Bergamot</span>
+                            </div>
+                            <p>Bright acidity with tea-like body and complex floral aromatics. Grown at 1900-2200 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$8.50/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ethiopian Sidamo -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Ethiopian Sidamo">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/et.png" class="origin-flag" alt="Ethiopia flag">
+                                <span class="text-muted">Ethiopia</span>
+                            </div>
+                            <h3 class="coffee-title">Sidamo Grade 2</h3>
+                            <p class="text-muted">Natural Process • 85 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Blueberry</span>
+                                <span class="flavor-tag">Chocolate</span>
+                                <span class="flavor-tag">Jammy</span>
+                            </div>
+                            <p>Full-bodied with intense fruit notes and winey characteristics. Grown at 1500-1800 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.75/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kenyan AA -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Kenyan AA">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/ke.png" class="origin-flag" alt="Kenya flag">
+                                <span class="text-muted">Kenya</span>
+                            </div>
+                            <h3 class="coffee-title">Nyeri AA</h3>
+                            <p class="text-muted">Double Washed • 87 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Black Currant</span>
+                                <span class="flavor-tag">Tomato</span>
+                                <span class="flavor-tag">Brown Sugar</span>
+                            </div>
+                            <p>Vibrant acidity with complex fruit notes and syrupy body. Grown at 1600-2000 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$9.25/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Latin American Coffees -->
+        <section id="latin-america" class="menu-category">
+            <h2 class="section-title">Latin American Origins</h2>
+            <div class="row">
+                <!-- Colombian Huila -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Colombian Huila">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/co.png" class="origin-flag" alt="Colombia flag">
+                                <span class="text-muted">Colombia</span>
+                            </div>
+                            <h3 class="coffee-title">Huila Supremo</h3>
+                            <p class="text-muted">Washed Process • 85 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Caramel</span>
+                                <span class="flavor-tag">Red Apple</span>
+                                <span class="flavor-tag">Nutty</span>
+                            </div>
+                            <p>Balanced cup with medium acidity and creamy mouthfeel. Grown at 1500-1800 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$6.75/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Guatemalan Antigua -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Guatemalan Antigua">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/gt.png" class="origin-flag" alt="Guatemala flag">
+                                <span class="text-muted">Guatemala</span>
+                            </div>
+                            <h3 class="coffee-title">Antigua SHB</h3>
+                            <p class="text-muted">Washed Process • 86 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Cocoa</span>
+                                <span class="flavor-tag">Pear</span>
+                                <span class="flavor-tag">Brown Spice</span>
+                            </div>
+                            <p>Rich chocolate notes with bright acidity and velvety body. Grown at 1500-1700 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.50/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Costa Rican Tarrazu -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Costa Rican Tarrazu">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/cr.png" class="origin-flag" alt="Costa Rica flag">
+                                <span class="text-muted">Costa Rica</span>
+                            </div>
+                            <h3 class="coffee-title">Tarrazu SHB</h3>
+                            <p class="text-muted">Honey Process • 87 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Honey</span>
+                                <span class="flavor-tag">Stone Fruit</span>
+                                <span class="flavor-tag">Brown Sugar</span>
+                            </div>
+                            <p>Sweet and complex with vibrant acidity and syrupy body. Grown at 1600-1800 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$8.25/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Asian Coffees -->
+        <section id="asia" class="menu-category">
+            <h2 class="section-title">Asian Origins</h2>
+            <div class="row">
+                <!-- Sumatra Mandheling -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Sumatra Mandheling">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/id.png" class="origin-flag" alt="Indonesia flag">
+                                <span class="text-muted">Indonesia</span>
+                            </div>
+                            <h3 class="coffee-title">Sumatra Mandheling G1</h3>
+                            <p class="text-muted">Wet-Hulled • 84 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Earthy</span>
+                                <span class="flavor-tag">Spicy</span>
+                                <span class="flavor-tag">Cedar</span>
+                            </div>
+                            <p>Full-bodied with low acidity and distinctive earthy characteristics. Grown at 1100-1300 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.25/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Papua New Guinea -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Papua New Guinea">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/pg.png" class="origin-flag" alt="PNG flag">
+                                <span class="text-muted">Papua New Guinea</span>
+                            </div>
+                            <h3 class="coffee-title">Eastern Highlands AA</h3>
+                            <p class="text-muted">Washed Process • 85 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Tobacco</span>
+                                <span class="flavor-tag">Dark Chocolate</span>
+                                <span class="flavor-tag">Molasses</span>
+                            </div>
+                            <p>Bold and earthy with dark chocolate notes and heavy body. Grown at 1400-1800 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.00/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indian Monsooned Malabar -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Indian Monsooned Malabar">
+                        <div class="coffee-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://flagcdn.com/w20/in.png" class="origin-flag" alt="India flag">
+                                <span class="text-muted">India</span>
+                            </div>
+                            <h3 class="coffee-title">Monsooned Malabar AA</h3>
+                            <p class="text-muted">Monsooned • 83 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Savory</span>
+                                <span class="flavor-tag">Spicy</span>
+                                <span class="flavor-tag">Musty</span>
+                            </div>
+                            <p>Unique processing creates a mellow, low-acid cup with distinctive flavor profile. Grown at 1000-1200 masl.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$6.50/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blends -->
+        <section id="blends" class="menu-category">
+            <h2 class="section-title">Signature Blends</h2>
+            <div class="row">
+                <!-- Espresso Blend -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Espresso Blend">
+                        <div class="coffee-body">
+                            <h3 class="coffee-title">Fidus Espresso</h3>
+                            <p class="text-muted">Dark Roast Profile • 85 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Chocolate</span>
+                                <span class="flavor-tag">Caramel</span>
+                                <span class="flavor-tag">Hazelnut</span>
+                            </div>
+                            <p>Our signature blend with 60% Brazil, 30% Colombia, and 10% Sumatra. Perfect for espresso with thick crema and balanced sweetness.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.00/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Breakfast Blend -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Breakfast Blend">
+                        <div class="coffee-body">
+                            <h3 class="coffee-title">Morning Sun</h3>
+                            <p class="text-muted">Medium Roast Profile • 86 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Citrus</span>
+                                <span class="flavor-tag">Brown Sugar</span>
+                                <span class="flavor-tag">Milk Chocolate</span>
+                            </div>
+                            <p>A bright blend of 70% Ethiopian and 30% Costa Rican beans. Lively acidity with smooth finish, ideal for filter brewing.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$7.50/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decaf Blend -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="coffee-item">
+                        <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="coffee-img" alt="Decaf Blend">
+                        <div class="coffee-body">
+                            <h3 class="coffee-title">Night Owl Decaf</h3>
+                            <p class="text-muted">Medium-Dark Roast • 84 SCA</p>
+                            <div class="flavor-profile">
+                                <span class="flavor-tag">Toffee</span>
+                                <span class="flavor-tag">Dried Fruit</span>
+                                <span class="flavor-tag">Cocoa</span>
+                            </div>
+                            <p>Swiss Water Process decaf blend of Colombian and Guatemalan beans. Full flavor without the caffeine.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price">$8.00/lb</span>
+                                <a href="#" class="btn btn-coffee btn-sm">Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="text-center py-5 my-5">
+            <h2 class="display-5 fw-bold mb-4">Ready to Order?</h2>
+            <p class="lead mb-4">Minimum order quantity: 5 bags (60kg each)</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-coffee btn-lg px-4">Request Full Price List</a>
+                <a href="#" class="btn btn-outline-dark btn-lg px-4">Contact Our Team</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-4">FIDUS ACHATES</h3>
+                    <p>Specialty green coffee beans for discerning roasters worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Products</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50">Single Origin</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Blends</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Organic</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Decaf</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Company</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Sourcing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Sustainability</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="h5 mb-4">Contact</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Coffee Exchange, Portland, OR 97209</p>
+                        <p><i class="fas fa-phone me-2"></i> (503) 555-0199</p>
+                        <p><i class="fas fa-envelope me-2"></i> sales@fidusachates.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">© 2023 Fidus Achates International. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                        <a href="#" class="text-white-50 me-3">Terms</a>
+                        <a href="#" class="text-white-50">Sitemap</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
