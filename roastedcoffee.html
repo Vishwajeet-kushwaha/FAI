@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidus Achates | Roasted Coffee Menu</title>
+    <meta name="description" content="Explore our premium selection of expertly roasted specialty coffee beans from India, including Arabica, Robusta, and unique specialty grades.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f4d4f77253.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --coffee-brown: #6F4E37;
+            --light-cream: #F5F0E6;
+            --dark-brown: #3A2C1A;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--dark-brown);
+            background-color: var(--light-cream);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-brown) !important;
+        }
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: #5a3d2a;
+        }
+        .menu-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/roasted.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        .coffee-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .coffee-item:hover {
+            transform: translateY(-10px);
+        }
+        .coffee-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .coffee-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .coffee-body p {
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        .coffee-title {
+            font-weight: 700;
+            color: var(--coffee-brown);
+            margin-bottom: 10px;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--coffee-brown);
+        }
+        .menu-category {
+            margin-bottom: 60px;
+        }
+         .sub-heading {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 25px;
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="index.html">FIDUS ACHATES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2"><a class="nav-link" href="#arabica">Arabica</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#robusta">Robusta</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#speciality">Speciality Coffee</a></li>
+                </ul>
+                <div class="ms-3 d-flex">
+                    <a href="index.html#contact" class="btn btn-coffee">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeIn">Our Roasted Coffee Selection</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Expertly roasted beans, ready for brewing. Available for wholesale and private label.</p>
+        </div>
+    </header>
+    
+
+    <!-- Menu Content -->
+    <div class="container">
+        <!-- Arabica Coffees -->
+        <section id="arabica" class="menu-category">
+            <h2 class="section-title">Roasted Arabica Beans</h2>
+            
+            <h4 class="sub-heading">Arabica Plantation (Washed)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation AAA</h3><p>The highest grade of washed Arabica. Large, uniform beans with a bright, complex flavor profile.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation AA</h3><p>A premium grade with bold beans, offering a balanced and smooth cup with rich aroma.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation A</h3><p>A popular choice for its consistent quality and well-rounded flavor, perfect for daily brewing.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation PB</h3><p>Peaberry beans, known for their concentrated flavor. Roasts evenly for a bright and flavorful cup.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation B</h3><p>A reliable and versatile bean, great as a standalone coffee or as a base for blends.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation C</h3><p>An economical grade, often used in blends to add body and character.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation BBB</h3><p>Bulk grade suitable for commercial blends and flavored coffee applications.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+
+            <h4 class="sub-heading">Arabica Cherry (Natural)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AAA</h3><p>Top-grade natural processed Arabica with intense fruit-forward notes and a heavy body.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AA</h3><p>Bold beans with sweet, winey flavors and a pleasant aroma. A classic natural coffee.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry A</h3><p>Well-balanced with fruity sweetness and a smooth finish. Excellent for drip or pour-over.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry PB</h3><p>Natural processed peaberries that deliver a cup bursting with sweetness and complex fruit notes.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AB</h3><p>A dependable and flavorful natural coffee, perfect for adding fruity depth to espresso blends.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry C</h3><p>A workhorse bean for blends, providing a solid foundation of sweetness and body.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry BBB</h3><p>Used primarily in commercial blends for its robust flavor and cost-effectiveness.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+        </section>
+
+        <!-- Robusta Coffees -->
+        <section id="robusta" class="menu-category">
+            <h2 class="section-title">Roasted Robusta Beans</h2>
+            <h4 class="sub-heading">Robusta Plantation (Washed)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation AA</h3><p>Top-tier washed Robusta. Delivers a clean, strong cup with a smooth finish and excellent crema.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation A</h3><p>A high-quality Robusta perfect for adding a caffeine kick and rich crema to espresso blends.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation AB</h3><p>A versatile and consistent washed Robusta, widely used in traditional Italian-style espresso.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation PB</h3><p>Washed Robusta peaberries with a powerful, concentrated flavor and a smooth, clean cup.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation C</h3><p>A standard grade for blends, providing the classic Robusta boldness and high caffeine content.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Plantation BBB</h3><p>Bulk grade Robusta, ideal for instant coffee and high-volume commercial applications.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+
+            <h4 class="sub-heading">Robusta Cherry (Natural)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry AAA</h3><p>Premium natural Robusta. Bold, chocolatey, and earthy, with a lingering finish.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry AA</h3><p>The standard for quality natural Robusta, offering a strong, full-bodied cup with low acidity.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry A</h3><p>A solid choice for espresso, providing a thick, stable crema and a powerful flavor profile.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry PB</h3><p>Natural Robusta peaberries that roast to a rich, intense flavor with hints of dark chocolate.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry AB</h3><p>The backbone of many classic espresso blends, known for its consistency and strength.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry C</h3><p>An economical choice for adding a bold, traditional coffee flavor to blends.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                 <div class="col d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Cherry BBB</h3><p>Bulk grade used for industrial applications requiring a strong coffee flavor.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+        </section>
+
+        <!-- Speciality Coffee -->
+        <section id="speciality" class="menu-category">
+            <h2 class="section-title">Speciality Roasted Coffee</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Monsoon Malabar</h3><p>A unique Indian specialty. The monsooning process results in a heavy-bodied, low-acidity cup with a unique, musty flavor profile.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col-lg-4 col-md-6 d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Robusta Kapi Royal (RKR)</h3><p>A specialty washed Robusta known for its strong body, smooth cup, and rich crema, making it a superior choice for espresso.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col-lg-4 col-md-6 d-flex"><div class="coffee-item"><img src="img/roastedbeans.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Mysore Nuggets Extra Bold</h3><p>A premium washed Arabica (Plantation AAA) prized for its large beans, clean cup, and bright, complex flavors.</p><div class="mt-auto d-flex justify-content-end"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="text-center py-5 my-5">
+            <h2 class="display-5 fw-bold mb-4">Get Our Wholesale Price List</h2>
+            <p class="lead mb-4">Contact us for wholesale pricing, private label options, and to request samples of our roasted coffee.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="index.html#contact" class="btn btn-coffee btn-lg px-4">Request Pricing</a>
+                <a href="index.html#contact" class="btn btn-outline-dark btn-lg px-4">Contact Our Team</a>
+            </div>
+        </section>
+    </div>
+
+       <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h3 mb-3">FIDUS ACHATES INTERNATIONAL</h3>
+                    <p>Specialty green coffee beans for discerning roasters worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Our Products</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="greencofee.html" class="text-white-50">Green Beans</a></li>
+                        <li class="mb-2"><a href="roastedcoffee.html" class="text-white-50">Roasted Beans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Company</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="ownerinfo.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="source.html" class="text-white-50">Sourcing</a></li>
+                        <li class="mb-2"><a href="freshness.html" class="text-white-50">Freshness</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="h5 mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> At. Gadeghat, Juni Kamptee, Nagpur</p>
+                        <p><i class="fas fa-phone me-2"></i> 7219196921</p>
+                        <p><i class="fas fa-envelope me-2"></i> fidusachatesglobal@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">© 2025 Fidus Achates International. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="pp.html" class="text-white-50 me-3">Privacy Policy</a>
+                        <a href="tnc.html" class="text-white-50 me-3">Terms</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

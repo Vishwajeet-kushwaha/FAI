@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidus Achates | Our Commitment to Freshness</title>
+    <meta name="description" content="Discover the Fidus Achates promise of freshness for both green and roasted coffee. We deliver current crop green beans and roast-to-order coffee for peak flavor.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4d4f77253.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --coffee-brown: #6F4E37;
+            --light-cream: #F5F0E6;
+            --dark-brown: #3A2C1A;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--dark-brown);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-brown) !important;
+        }
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            color: white;
+            border: 2px solid var(--coffee-brown);
+        }
+        .btn-coffee:hover {
+            background-color: #5a3d2a;
+            border-color: #5a3d2a;
+        }
+        .freshness-header {
+            background: linear-gradient(rgba(40, 30, 15, 0.6), rgba(40, 30, 15, 0.6)), url('https://images.unsplash.com/photo-1545665225-b23b99e4d45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            color: var(--dark-brown);
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--coffee-brown);
+        }
+        .journey-card {
+            background-color: #fff;
+            border-radius: 8px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+        .journey-card-header {
+            background-color: var(--dark-brown);
+            color: white;
+            padding: 1.5rem;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .journey-card-header .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .journey-step {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .journey-step:last-child {
+            border-bottom: none;
+        }
+        .journey-step .step-icon {
+            font-size: 1.5rem;
+            color: var(--coffee-brown);
+            min-width: 40px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .journey-step .step-text h5 {
+            font-weight: bold;
+        }
+        .journey-step .step-text p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="index.html">FIDUS ACHATES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="roasted-menu.html">Products</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="sourcing.html">Sourcing</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="quality.html">Quality</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link active" href="freshness.html">Freshness</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="freshness-header text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Our Commitment to Freshness</h1>
+            <p class="lead fs-4 mt-3">From Fresh Crop to Fresh Roast, Peak Flavor is Our Promise</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container py-4 text-center">
+             <div class="row justify-content-center">
+                <div class="col-lg-9">
+                     <h2 class="display-5 fw-bold mb-4">What "Fresh" Means to Us</h2>
+                     <p class="lead text-muted">Whether you are a professional roaster seeking the best green beans or a coffee lover looking for the perfect cup, freshness is paramount. It defines the vibrancy, aroma, and flavor potential of your coffee. At Fidus Achates, we've engineered our entire supply chain around two distinct but equally important journeys to guarantee that potential is delivered to you, every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Two Journeys Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+             <div class="text-center mb-5">
+                <h2 class="section-title">Two Paths to Peak Flavor</h2>
+            </div>
+            <div class="row g-5">
+                <!-- Green Coffee Journey -->
+                <div class="col-lg-6 d-flex">
+                    <div class="journey-card">
+                        <div class="journey-card-header text-center">
+                            <div class="icon"><i class="fas fa-leaf"></i></div>
+                            <h3 class="h4 mb-0">The Green Bean Journey</h3>
+                            <p class="mb-0 small">For Roasters and Professionals</p>
+                        </div>
+                        <div class="journey-card-body">
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-calendar-alt"></i></div>
+                                <div class="step-text"><h5>Current Crop Sourcing</h5><p>We only source beans from the most recent harvest, ensuring you receive "fresh crop" coffee with maximum vitality and flavor potential.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-tint"></i></div>
+                                <div class="step-text"><h5>Optimal Drying & Resting</h5><p>At origin, beans are carefully dried to a stable 10-12% moisture content, a critical step for preserving quality during transit and storage.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div class="step-text"><h5>Protective Transit</h5><p>Your green beans are shipped in GrainPro bags to protect them from moisture, oxygen, and outside odors, locking in their unique terroir.</p></div>
+                            </div>
+                             <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-warehouse"></i></div>
+                                <div class="step-text"><h5>Climate-Controlled Storage</h5><p>Upon arrival, we store all green coffee in a climate-controlled environment to maintain its quality until the moment you place your order.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                                <div class="step-text"><h5>Immediate Dispatch</h5><p>When you order, we promptly package and dispatch your green beans, ensuring they get to your roastery quickly and in perfect condition.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roasted Coffee Journey -->
+                <div class="col-lg-6 d-flex">
+                     <div class="journey-card">
+                        <div class="journey-card-header text-center">
+                            <div class="icon"><i class="fas fa-fire-alt"></i></div>
+                            <h3 class="h4 mb-0">The Roasted Bean Journey</h3>
+                            <p class="mb-0 small">For Cafes and Home Brewers</p>
+                        </div>
+                        <div class="journey-card-body">
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-bell"></i></div>
+                                <div class="step-text"><h5>Order Received</h5><p>Your order triggers the process. We don't pull from stock; we prepare to roast your coffee specifically for you.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-sync-alt"></i></div>
+                                <div class="step-text"><h5>Roasted to Order</h5><p>Our roasters select the right green beans and roast them in small, precise batches to meet the demands of your order.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-clock"></i></div>
+                                <div class="step-text"><h5>Optimal Degassing</h5><p>We rest the freshly roasted coffee for the perfect amount of time, allowing flavors to develop and mature before packaging.</p></div>
+                            </div>
+                             <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-box"></i></div>
+                                <div class="step-text"><h5>Sealed for Freshness</h5><p>Your coffee is immediately packed in one-way valve bags, preventing oxygen from entering while letting CO2 escape.</p></div>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-icon"><i class="fas fa-shipping-fast"></i></div>
+                                <div class="step-text"><h5>Rapid Dispatch</h5><p>Within 24-48 hours of roasting, your coffee is on its way to your door, ensuring it arrives within its peak flavor window.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container text-center py-5">
+            <h2 class="display-5 fw-bold mb-3">Taste the Difference Freshness Makes</h2>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px;">Whether you're crafting your next award-winning roast or brewing your morning cup, our commitment to freshness ensures an exceptional experience. Explore our selection and see for yourself.</p>
+            <a href="greencofee.html" class="btn btn-coffee btn-lg px-5 py-3 mt-3">View Our Green Coffee Selection</a>
+             <a href="roastedcoffee.html" class="btn btn-coffee btn-lg px-5 py-3 mt-3">View Our Roasted Coffee Selection</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h3 mb-3">FIDUS ACHATES INTERNATIONAL</h3>
+                    <p>Specialty green coffee beans for discerning roasters worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Our Products</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="greencofee.html" class="text-white-50">Green Beans</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-white-50">-------</a></li> -->
+                        <li class="mb-2"><a href="roastedcoffee.html" class="text-white-50">Roasted Beans</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-white-50">------</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Company</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="ownerinfo.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="source.html" class="text-white-50">Sourcing</a></li>
+                        <li class="mb-2"><a href="freshness.html" class="text-white-50">Freshness</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="h5 mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> At. Gadeghat, Juni Kamptee, Nagpur</p>
+                        <p><i class="fas fa-phone me-2"></i> 7219196921</p>
+                        <p><i class="fas fa-envelope me-2"></i> fidusachatesglobal@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">© 2025 Fidus Achates International. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="pp.html" class="text-white-50 me-3">Privacy Policy</a>
+                        <a href="tnc.html" class="text-white-50 me-3">Terms</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

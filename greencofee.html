@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidus Achates | Coffee Menu</title>
+    <meta name="description" content="Explore our premium selection of specialty green coffee beans from India, with detailed grading information.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f4d4f77253.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --coffee-brown: #6F4E37;
+            --light-cream: #F5F0E6;
+            --dark-brown: #3A2C1A;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--dark-brown);
+            background-color: var(--light-cream);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-brown) !important;
+        }
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: #5a3d2a;
+        }
+        .menu-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/greencofee.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        .coffee-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .coffee-item:hover {
+            transform: translateY(-10px);
+        }
+        .coffee-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .coffee-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .coffee-body p {
+            flex-grow: 1;
+        }
+        .coffee-title {
+            font-weight: 700;
+            color: var(--coffee-brown);
+            margin-bottom: 10px;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--coffee-brown);
+        }
+        .menu-category {
+            margin-bottom: 60px;
+        }
+         .sub-heading {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 25px;
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="index.html">FIDUS ACHATES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2"><a class="nav-link" href="#arabica">Arabica</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#robusta">Robusta</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#speciality">Speciality Coffee</a></li>
+                </ul>
+                <div class="ms-3 d-flex">
+                    <a href="index.html#contact" class="btn btn-coffee">Request Info</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeIn">Our Green Coffee Grades</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Detailed specifications for our premium unroasted Indian coffee beans</p>
+        </div>
+    </header>
+
+    <!-- Menu Content -->
+    <div class="container">
+        <!-- Arabica Coffees -->
+        <section id="arabica" class="menu-category">
+            <h2 class="section-title">Arabica Beans</h2>
+            
+            <h4 class="sub-heading">Arabica Plantation (Washed)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation AAA (Mysore Nuggets Extra Bold)</h3><p>Also known as Mysore Nuggets Extra Bold, this is the top grade of washed Arabica.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation AA</h3><p>Minimum 90% by weight retention on a 7.10 mm sieve. Tolerance of 2% by weight for Peaberry (PB).</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation A</h3><p>Minimum 90% by weight retention on a 6.65mm sieve. Tolerance for Flats (AB): 2% by weight, PB Triage: 3% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation PB</h3><p>No sieve requirement. Clean garbled status. Tolerance for Flats (AB): 2% by weight, PB Triage: 3% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation B</h3><p>Minimum 75% by weight retention on a 6.00mm sieve. Tolerance for Flats (AB): 2% by weight, PB Triage: 3% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation C</h3><p>Minimum 75% by weight retention on a 5.50mm sieve. May include: Triage, small whole beans, light beans, boat shaped beans and spotted beans.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Plantation BBB</h3><p>Un-graded. Shall not contain more than 2% by weight of Blacks/Browns/Bits.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+
+            <h4 class="sub-heading mt-5">Arabica Cherry (Natural)</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AAA</h3><p>A premium coffee bean with a 7.50 mm size.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AA</h3><p>Minimum 90% by weight retention on a 7.10 mm sieve. Tolerance of PB: 2% and Triage: 1% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry A</h3><p>Minimum 90% by weight retention on a 6.65 mm sieve. Tolerance of PB: 2% and Triage: 2% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry PB</h3><p>No sieve requirement. Clean garbled status. Tolerance for Flats (AB): 2% by weight, PB Triage: 3% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry AB</h3><p>Minimum 90% by weight retention on a 6.00 mm sieve. Tolerance for Flats (AB): 2% by weight, PB Triage: 3% by weight.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry C</h3><p>Minimum 75% by weight retention on a 5.50 mm sieve. Shall not contain more than 2% of blacks/browns or bits.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+                <div class="col d-flex"><div class="coffee-item"><img src="img/greencofee.jpeg" class="coffee-img"><div class="coffee-body"><h3 class="coffee-title">Arabica Cherry BBB</h3><p>100% by weight retention on a 5.00mm sieve. May include: Black/dark brown beans, damaged beans.</p><div class="d-flex justify-content-end align-items-center mt-auto"><a href="index.html#contact" class="btn btn-coffee btn-sm">Request Info</a></div></div></div></div>
+            </div>
+        </section>
+
+        <!-- Other sections (Robusta, Speciality) would be updated similarly -->
+        <!-- ... -->
+
+        <!-- CTA Section -->
+        <section class="text-center py-5 my-5">
+            <h2 class="display-5 fw-bold mb-4">Ready to Order?</h2>
+            <p class="lead mb-4">Minimum order quantity: 5 bags (60kg each). Contact us for a full price list and availability.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="index.html#contact" class="btn btn-coffee btn-lg px-4">Request Full Price List</a>
+                <a href="index.html#contact" class="btn btn-outline-dark btn-lg px-4">Contact Our Team</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+   
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h3 mb-3">FIDUS ACHATES INTERNATIONAL</h3>
+                    <p>Specialty green coffee beans for discerning roasters worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Our Products</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="greencofee.html" class="text-white-50">Green Beans</a></li>
+                        <li class="mb-2"><a href="roastedcoffee.html" class="text-white-50">Roasted Beans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h5 mb-4">Company</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="ownerinfo.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="source.html" class="text-white-50">Sourcing</a></li>
+                        <li class="mb-2"><a href="freshness.html" class="text-white-50">Freshness</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-white-50">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="h5 mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> At. Gadeghat, Juni Kamptee, Nagpur</p>
+                        <p><i class="fas fa-phone me-2"></i> 7219196921</p>
+                        <p><i class="fas fa-envelope me-2"></i> fidusachatesglobal@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">© 2025 Fidus Achates International. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="pp.html" class="text-white-50 me-3">Privacy Policy</a>
+                        <a href="tnc.html" class="text-white-50 me-3">Terms</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
